@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">FuProject</string>
+    <!--新版登录专用-->
+    <string name="login">登录</string>
+    <string name="login_input_username_hint">用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="login_hold_hint">自动登录</string>
+    <string name="login_forget_hint">忘记密码？</string>
+    <string name="login_register_hint">注册</string>
+    <string name="login_other_hint">其他方式登录</string>
+    <string name="register_input_username_hint">手机号</string>
+    <string name="register_username_hint">用户名</string>
+    <string name="register_sms_auth_code">短信验证码</string>
+    <string name="register_sms_hint">获取验证码</string>
+    <string name="register_sms_wait_hint">别激动,休息一下呗&#8230;</string>
+
+    <string name="loading_image">正在准备图片...</string>
+    <string name="register_done_hint">完成</string>
+    <string name="register_man_hint">男士</string>
+    <string name="register_female_hint">女士</string>
+    <string name="retrieve_pwd_step_hint">下一步</string>
+    <string name="retrieve_pwd_email_label_one">邮箱用户找回密码，请</string>
+    <string name="retrieve_pwd_email_label"><a>点击这里</a></string>
+    <string name="reset_pwd_hint">请输入至少六位新密码</string>
+    <string name="register_pwd_hint">请输入至少六位数密码</string>
+    <string name="reset_pwd_submit">确认</string>
+    <string name="message_pwd_error">密码错误</string>
+    <string name="message_username_null">用户名未填写！！！</string>
+    <string name="title_activity_company">MainActivity</string>
+    <string name="title_home">公司</string>
+    <string name="title_dashboard">人才</string>
+    <string name="title_notifications">我的</string>
+    <string name="department_people_list_search_name">请输入员工姓名</string>
+
+
+    <string name="todo">TODO</string>
+    <string name="gender">性别：</string>
+    <string name="man">男</string>
+    <string name="degree">学历：</string>
+    <string name="design">设计</string>
+    <string name="position">职位：</string>
+    <string name="manager">经理</string>
+    <string name="phone">电话：</string>
+    <string name="phoneNumber">18357184059</string>
+    <string name="email">邮箱：</string>
+    <string name="emailNumber">1712152340@qq.com</string>
+    <string name="id">工号：</string>
+    <string name="idNumber">201908010422</string>
+    <string name="age">年龄：</string>
+    <string name="ageNumber">21</string>
+    <string name="work_experience">工作经历</string>
+    <string name="name">范 晓 航</string>
+    <string name="people_resume">员工简介</string>
+    <string name="work_evaluate">过往评价</string>
+    <string name="past_work_time">(2014–2016)</string>
+    <string name="example_work_experience">思想上，为人正直，稳定，谦虚。事业心，进取心强，能设身处地为他人着想，热爱集体。思想上，为人正直，稳定，谦虚。事业心，进取心强，能设身处地为他人着想，热爱集体。思想上，为人正直，稳定，谦虚。事业心，进取心强，能设身处地为他人着想，热爱集体。</string>
+    <string name="example_company">星龙科技有限公司</string>
+    <string name="member">成员</string>
+    <string name="bottom_string">到底啦！</string>
+    <string name="list_name">请输入员工姓名</string>
+    <string name="train_string">培训搜索</string>
+    <string name="train_class_string">Java培训课</string>
+    <string name="train_class_mechanism">尚硅谷培训</string>
+    <string name="train_class_people_number">703332</string>
+    <string name="department">部门: </string>
+</resources>

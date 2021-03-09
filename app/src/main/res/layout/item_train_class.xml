@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:id="@+id/item_train_class_image"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/photo5"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_class_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="@string/train_class_string"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_class_mechanism"
+                android:textColor="#707070"
+                android:textSize="12sp"
+                android:text="@string/train_class_mechanism"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_class_people_number"
+                android:textColor="#707070"
+                android:textSize="12sp"
+                android:text="@string/train_class_people_number"
+                android:layout_marginTop="60dp"
+                android:drawableLeft="@drawable/people"
+                android:drawableStart="@drawable/people" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

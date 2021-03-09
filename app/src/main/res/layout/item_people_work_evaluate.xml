@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        tools:ignore="RtlSymmetry,UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/past_work_company"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="@string/example_company"
+                android:drawableLeft="@drawable/experience"
+                android:drawableStart="@drawable/experience" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/past_work_time"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="@string/past_work_time" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/past_work_evaluate"
+            android:paddingLeft="20dp"
+            android:text="@string/example_work_experience"
+            android:maxLength="100"
+            android:maxLines="4"
+            android:ellipsize="end"
+
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:paddingStart="20dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
