@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fuproject.R
 import com.example.fuproject.activity.CompanyActivity
+import com.example.fuproject.activity.information.tab.TabActivity
 import com.example.fuproject.activity.ui.home.activity.EmploymentLastActivity
 import com.example.fuproject.activity.ui.home.tree.TreeData
 import com.example.fuproject.activity.ui.home.tree.TreeListAdapter
@@ -54,7 +55,10 @@ class HomeFragment : Fragment() {
         meDo = MeDo(this, this)
 //        meContext=context
         CompanyActivity.activity.user_toolbar_textView.text="公司"
-
+        root.see_all_information.setOnClickListener {
+            val intent=Intent(activity,TabActivity::class.java);
+            startActivity(intent)
+        }
 
         if(PageUserSData.isEmpty()){
             messageThings()

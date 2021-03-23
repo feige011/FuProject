@@ -24,8 +24,6 @@ class NotificationsFragment : Fragment() {
 ////        setContentView(R.layout.layout_people_train)
 ////
 ////    }
-//
-//
 //    private fun init(view:View) {
 ////        initControlBind(view,recyclerView)
 //        initData()

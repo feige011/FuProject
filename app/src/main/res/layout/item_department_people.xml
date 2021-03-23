@@ -19,6 +19,7 @@
             app:srcCompat="@drawable/down_gray" />
 
         <ImageView
+            android:id="@+id/iv_people"
             android:layout_gravity="center"
             android:layout_width="30dp"
             android:layout_height="wrap_content"

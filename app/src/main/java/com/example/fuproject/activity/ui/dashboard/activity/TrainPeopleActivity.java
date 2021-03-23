@@ -26,6 +26,11 @@ import static androidx.recyclerview.widget.RecyclerView.State;
 
 public class TrainPeopleActivity extends AppCompatActivity {
 
+
+
+
+
+
 //    private TabLayout tabLayout;
     private RecyclerView recyclerView;
     private List<TrainClassBean> trainClassBeanList = new ArrayList<TrainClassBean>();

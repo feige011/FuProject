@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fuproject.R;
 import com.example.fuproject.activity.ui.home.HomeFragment;
+import com.example.fuproject.activity.ui.home.activity.DepartmentPeopleResumeActivity;
 import com.example.fuproject.activity.ui.home.activity.EmploymentLastActivity;
 import com.example.fuproject.activity.ui.home.tree.BaseViewHolder;
 import com.example.fuproject.model.AllDepartmentsResponse;
@@ -91,7 +92,7 @@ public class TreeListAdapter extends RecyclerView.Adapter<BaseViewHolder>
         TextView tvCompanyName = baseViewHolder.getView(R.id.tv_company_name);
         tvCompanyName.setText(treeData.getName());
         ImageView leftImg = baseViewHolder.getView(R.id.iv_spread_level_0);
-
+        ImageView leftPeopleImg= baseViewHolder.getView(R.id.iv_people);
 //        recyclerView=baseViewHolder.getView(R.id.tree_list_recyclerview);
 
 
@@ -115,6 +116,14 @@ public class TreeListAdapter extends RecyclerView.Adapter<BaseViewHolder>
         } else
         {
             //没有的话把图标隐藏了
+
+//            if(treeData.getDepartments()!=null){
+////                if(treeData.getEmploymentOfCompany()!=null){
+//                    leftPeopleImg.setImageResource(R.drawable.ic_department2_foreground);
+////                }
+//            }else{
+//                leftPeopleImg.setImageResource(R.drawable.ic_staff_foreground);
+//            }
             leftImg.setVisibility(View.INVISIBLE);
         }
 //        这里设置左边的外边距以达到层级的效果

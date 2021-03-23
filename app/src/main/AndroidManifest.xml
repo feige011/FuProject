@@ -98,6 +98,21 @@
             android:theme="@style/Account_Base.App.Theme.NoTitle"
             android:windowSoftInputMode="stateHidden|adjustResize"
             tools:ignore="Instantiatable" />
+
+        <activity android:name=".MainActivity">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".activity.information.tab.TabActivity" android:theme="@style/NoTtTile">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>
