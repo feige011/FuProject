@@ -1,5 +1,6 @@
 package com.example.fuproject.activity.ui.notifications
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.fuproject.R
 import com.example.fuproject.activity.CompanyActivity
+import kotlinx.android.synthetic.main.activity_certificate.*
 import kotlinx.android.synthetic.main.activity_company.*
+import kotlinx.android.synthetic.main.activity_job.view.*
 
 
 class NotificationsFragment : Fragment() {
@@ -126,6 +129,14 @@ class NotificationsFragment : Fragment() {
             ViewModelProvider(this).get(NotificationsViewModel::class.java)
         val root = inflater.inflate(R.layout.activity_job, container, false)
         CompanyActivity.activity.user_toolbar_textView.text="我的"
+        root.see_certificate.setOnClickListener {
+           val intent=Intent(this.context,CertificateActivity::class.java)
+            startActivity(intent)
+        }
+        root.job_about.setOnClickListener {
+            val intent=Intent(this.context,AboutActivity::class.java)
+            startActivity(intent)
+        }
 //        mContext=context as Context
 //        init(root)
 //        val textView: TextView = root.findViewById(R.id.text_notifications)

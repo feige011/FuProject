@@ -36,7 +36,7 @@ public class TabActivity extends AppCompatActivity {
             if(i==2){
                 tabFragmentList.add(TabFragment3.newInstance(tabs[i]));
             }else{
-                tabFragmentList.add(TabFragment2.newInstance(tabs[i],i+1));
+                tabFragmentList.add(TabFragment2. newInstance(tabs[i],i+1));
             }
 
         }

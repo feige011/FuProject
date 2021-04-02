@@ -1,21 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_width="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:orientation="vertical"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <LinearLayout
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <ImageView
+            android:id="@+id/ic_back_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/department_people_work_experience_recyclerview"
-            tools:ignore="RtlSymmetry" />
+            android:src="@drawable/ic_back_foreground"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="基本信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
+    </androidx.appcompat.widget.Toolbar>
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_department_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tabTextColor="@color/colorPrimary"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabMode="scrollable"
+                />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_department_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tab_department_layout"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
-</ScrollView>
+
+<!--</ScrollView>-->

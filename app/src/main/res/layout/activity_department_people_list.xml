@@ -7,7 +7,30 @@
     android:orientation="vertical"
     android:background="#FFFFFF"
     tools:context=".activity.ui.home.HomeFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
+        <ImageView
+            android:id="@+id/ic_back_department_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_foreground"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:text="查看员工"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -23,7 +46,7 @@
             android:layout_marginLeft="10dp"
             android:drawablePadding="5dp"
             android:drawableLeft="@drawable/ic_search_background"
-            android:text="@string/department_people_list_search_name"
+            android:hint="@string/department_people_list_search_name"
             android:background="@drawable/edit_text_bg"
             android:id="@+id/department_peorple_list_search"
             android:drawableStart="@drawable/search" />

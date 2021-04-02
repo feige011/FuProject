@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="place">
+        <item>地点</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>杭州</item>
+        <item>长沙</item>
+        <item>哈尔滨</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="train_category">
+        <item>类别</item>
+        <item>研发</item>
+        <item>测试</item>
+        <item>数据</item>
+        <item>算法</item>
+        <item>前端</item>
+        <item>产品</item>
+        <item>运营</item>
+        <item>所有</item>
+    </string-array>
+    <string-array name="train_spinner_sort">
+        <item>排序</item>
+        <item>最新发布</item>
+        <item>金钱</item>
+        <item>每周时间</item>
+        <item>星级</item>
+    </string-array>
+
+</resources>

@@ -31,52 +31,54 @@ import java.util.List;
 
 public class DepartmentPeopleResumeActivity extends AppCompatActivity {
 
-//    private String[] tabs = {"员工平均月工资", "公司年度总收入","员工工资占比","公司入职员工","公司离职员工","公司总员工"};
-//    private List<Fragment> tabFragmentList = new ArrayList<>();
-//    @Override
-//    protected void onCreate(@Nullable Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_tab);
-//        ImageView back=findViewById(R.id.ic_back_information);
-//        back.setOnClickListener((v)->{
-//            finish();
-//        });
-//        TabLayout tabLayout = findViewById(R.id.tab_layout);
-//        ViewPager viewPager = findViewById(R.id.view_pager);
-//        //添加tab
-//        for (int i = 0; i < tabs.length; i++) {
+    private String[] tabs = {"基本信息", "星龙有限公司","飞毛有限公司","东强有限公司","菜行有限公司"};
+    private List<Fragment> tabFragmentList = new ArrayList<>();
+    public void initFragment(){
+        TabLayout tabLayout = findViewById(R.id.tab_department_layout);
+        ViewPager viewPager = findViewById(R.id.view_department_pager);
+        ImageView back=findViewById(R.id.ic_back_data);
+        back.setOnClickListener((v)->{
+            this.finish();
+        });
+        userId=getIntent().getIntExtra("userId",-1);
+        departmentName = getIntent().getStringExtra("departmentName");
+
+        //添加tab
+        for (int i = 0; i < tabs.length; i++) {
 //            tabLayout.addTab(tabLayout.newTab().setText(tabs[i]));
+            if(i==0){
+                tabFragmentList.add(TabFragmentDepartment1.newInstance(userId,departmentName));
+            }else{
+                tabFragmentList.add(TabFragmentDepartment2.newInstance(tabs[i]));
+            }
+
 //            if(i==2){
 //                tabFragmentList.add(TabFragment3.newInstance(tabs[i]));
 //            }else{
 //                tabFragmentList.add(TabFragment2.newInstance(tabs[i],i+1));
 //            }
-//
-//        }
-//
-//        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
-//            @NonNull
-//            @Override
-//            public Fragment getItem(int position) {
-//                return tabFragmentList.get(position);
-//            }
-//
-//            @Override
-//            public int getCount() {
-//                return tabFragmentList.size();
-//            }
-//
-//            @Nullable
-//            @Override
-//            public CharSequence getPageTitle(int position) {
-//                return tabs[position];
-//            }
-//        });
-//
-//        //设置TabLayout和ViewPager联动
-//        tabLayout.setupWithViewPager(viewPager,false);
-//    }cd 
+        }
+        viewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+            @NonNull
+            @Override
+            public Fragment getItem(int position) {
+                return tabFragmentList.get(position);
+            }
+            @Override
+            public int getCount() {
+                return tabFragmentList.size();
+            }
 
+            @Nullable
+            @Override
+            public CharSequence getPageTitle(int position) {
+                return tabs[position];
+            }
+        });
+
+        //设置TabLayout和ViewPager联动
+        tabLayout.setupWithViewPager(viewPager,false);
+    }
 
 
 
@@ -88,8 +90,9 @@ public class DepartmentPeopleResumeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_department_people_resume);
-        initAll();
-        init();
+        initFragment();
+//        initAll();
+//        init();
 
     }
     static Integer userId;
@@ -105,9 +108,7 @@ public class DepartmentPeopleResumeActivity extends AppCompatActivity {
         Log.e("feifei1",userId.toString());
         if(userId!=-1){
             ArrayList<PageUserSInfoResponseList> pageUserData= HomeFragment.Companion.getPageUserSData();
-
             for(PageUserSInfoResponseList pageUser : pageUserData){
-
                 if(pageUser.getId()==userId){
                     name=pageUser.getName();
 //                    people_resume_name.text=pageUser.name
@@ -121,21 +122,14 @@ public class DepartmentPeopleResumeActivity extends AppCompatActivity {
 //                            people_resume_department.text=departmentName
 //                        }
 //                    }
-
-
-
                     if(pageUser.getPhoneNumber()!=null){
                         phoneNumber=pageUser.getPhoneNumber();
 //                        people_resume_phone.text=;
                     }
-
-
-//                    people_resume_age.text="18"
                     if(pageUser.getEmail()!=null){
                         email=pageUser.getEmail();
                     }
                     id=pageUser.getId();
-//                    people_resume_position.text=pageUser.
                     break;
                 }
             }
@@ -160,7 +154,6 @@ public class DepartmentPeopleResumeActivity extends AppCompatActivity {
     }
 
     private void initRecyclerView() {
-
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(new DepartmentPeopleResumeAdapt(this));
@@ -269,9 +262,7 @@ public class DepartmentPeopleResumeActivity extends AppCompatActivity {
     }
 
     private static class HeaderViewHolder extends RecyclerView.ViewHolder {
-
         public HeaderViewHolder(@NonNull View itemView) {
-
             super(itemView);
             TextView peopleResumeName=itemView.findViewById(R.id.people_resume_name);
             peopleResumeName.setText(name);

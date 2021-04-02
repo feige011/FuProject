@@ -18,6 +18,8 @@ import com.example.fuproject.R
 import com.example.fuproject.activity.CompanyActivity
 import com.example.fuproject.activity.information.tab.TabActivity
 import com.example.fuproject.activity.ui.home.activity.EmploymentLastActivity
+import com.example.fuproject.activity.ui.home.help.HelpActivity
+import com.example.fuproject.activity.ui.home.train.TrainActivity
 import com.example.fuproject.activity.ui.home.tree.TreeData
 import com.example.fuproject.activity.ui.home.tree.TreeListAdapter
 import com.example.fuproject.model.*
@@ -27,6 +29,7 @@ import com.example.fuproject.network.TokenStatic
 import com.example.fuproject.network.TokenStatic.Companion.TOKEN
 import com.example.fuproject.text.MeDo
 import kotlinx.android.synthetic.main.activity_company.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import okhttp3.internal.lockAndWaitNanos
 import retrofit2.Call
@@ -42,6 +45,12 @@ class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
 
+    fun trainPeople(root:View){
+        root.train_people.setOnClickListener {
+            val intent=Intent(activity,TrainActivity::class.java)
+            startActivity(intent)
+        }
+    }
     //    val meDo: MeDo = MeDo(this, this)
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,13 +62,17 @@ class HomeFragment : Fragment() {
         root = inflater.inflate(R.layout.fragment_home, container, false)
 //        Log.e("feifei",root)
         meDo = MeDo(this, this)
+        trainPeople(root)
 //        meContext=context
         CompanyActivity.activity.user_toolbar_textView.text="公司"
         root.see_all_information.setOnClickListener {
             val intent=Intent(activity,TabActivity::class.java);
             startActivity(intent)
         }
-
+        root.fragment_help.setOnClickListener {
+            val intent=Intent(activity,HelpActivity::class.java)
+            startActivity(intent)
+        }
         if(PageUserSData.isEmpty()){
             messageThings()
         }

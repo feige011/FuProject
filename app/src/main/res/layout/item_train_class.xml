@@ -1,60 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:background="@color/white"
-    android:paddingRight="10dp"
-    android:paddingLeft="10dp">
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
 
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/item_train_cardView"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="120dp"
-            android:id="@+id/item_train_class_image"
-            android:contentDescription="@string/todo"
-            android:src="@drawable/photo5"/>
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="2dp"
+        >
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="120dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/train_class_name"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:text="@string/train_class_string"/>
+            <RelativeLayout
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/train_class_mechanism"
-                android:textColor="#707070"
-                android:textSize="12sp"
-                android:text="@string/train_class_mechanism"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/train_class_people_number"
-                android:textColor="#707070"
-                android:textSize="12sp"
-                android:text="@string/train_class_people_number"
-                android:layout_marginTop="60dp"
-                android:drawableLeft="@drawable/people"
-                android:drawableStart="@drawable/people" />
+                <TextView
+                    android:id="@+id/item_train_do"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="游戏策划"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
+                <TextView
+                    android:id="@+id/item_train_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:text="3000-4000元/月"
+                    android:textColor="#FFF30505" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    app:cardBackgroundColor="#FFF5F5F5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF5F5F5"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/item_train_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF6F6F6F"
+                        android:padding="5dp"
+                        android:text="北京" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:cardBackgroundColor="#FFF5F5F5"
+                    app:cardCornerRadius="5dp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/item_train_do_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF6F6F6F"
+
+                            android:text="5" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF6F6F6F"
+                            android:text="天/周" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_alignRight="@+id/item_train_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐指数: "
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_train_recommended_star"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_star_foreground"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignBottom="@+id/item_train_relative"
+                    android:layout_alignRight="@+id/item_train_relative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/item_train_release_time"
+                        android:text="1"
+                        />
+                    <TextView
+                        android:id="@+id/item_train_release_time_text"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="天前" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/item_train_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/item_train_class_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/photo5" />
+
+                    <LinearLayout
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/train_class_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="feige011"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/train_class_education"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="本科"
+                            android:textColor="#707070"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
-    </LinearLayout>
-
+    </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

@@ -34,7 +34,9 @@ class EmploymentLastActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_employment_last)
-
+        ic_back_employment.setOnClickListener {
+            finish()
+        }
         context=this
         val allTreeDate= HomeFragment.homeAllTreeData
         allEmploymentOfCompanyList=HomeFragment.staticAllEmploymentOfCompanyList

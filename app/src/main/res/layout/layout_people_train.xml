@@ -19,19 +19,20 @@
             tools:ignore="UselessParent">
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:id="@+id/train_search"
                 android:background="@drawable/bg_edit_text_normal"
-                android:hint="@string/train_string"
+                android:hint="搜索人才"
                 android:textSize="14sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
                 android:textColor="#707070"
                 android:drawableLeft="@drawable/train_search"
                 android:drawableStart="@drawable/train_search"
@@ -41,7 +42,14 @@
                 tools:ignore="RtlSymmetry"
                 android:importantForAutofill="no"
                 android:inputType="none" />
+            <Button
 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="搜索"
+                android:id="@+id/train_search_button"
+                />
         </LinearLayout>
 
 <!--        <LinearLayout-->
@@ -67,6 +75,54 @@
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/train_spinner_place"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:entries="@array/place"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="50dp"
+
+            />
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/train_spinner_category"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:entries="@array/train_category"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="50dp"
+            />
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/train_spinner_sort"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:entries="@array/train_spinner_sort"
+            android:layout_margin="1dp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

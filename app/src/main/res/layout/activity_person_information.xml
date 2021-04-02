@@ -1,361 +1,363 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#FFFAFA"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent">
 
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="个人信息 "
-            android:layout_margin="10dp"
-            android:textSize="12sp"
-            />
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="身份证号  "
+</LinearLayout><!--<ScrollView-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_height="match_parent">-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:background="#FFFAFA"-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        >-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:text="个人信息 "-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:textSize="12sp"-->
+    <!--            />-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="身份证号  "-->
 
-        </LinearLayout>
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="民族          "
+    <!--        </LinearLayout>-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="民族          "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="学位          "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="学位          "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="毕业学习  "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="毕业学习  "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="专业          "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="专业          "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="入职情况  "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="入职情况  "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="性别          "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="性别          "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="政治面貌  "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="政治面貌  "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="婚姻状况  "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="婚姻状况  "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="邮箱          "
-                android:textColor="@color/black"
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
 
-                android:textSize="15sp" />
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:text="邮箱          "-->
+    <!--                android:textColor="@color/black"-->
 
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--                android:textSize="15sp" />-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="户籍所在地"
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="户籍所在地"-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="现居地        "
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="现居地        "-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="头像   "
-                android:textSize="15sp"
-                />
-            <Button
-                android:textColor="@color/white"
-                android:text="点击上传"
-                android:layout_marginLeft="30dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_job"
-                />
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:textColor="@color/black"
-                android:text="自我描述"
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="头像   "-->
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <Button-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:text="点击上传"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/button_job"-->
+    <!--                />-->
 
-                android:textSize="15sp"
-                />
-            <EditText
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="@drawable/bg_job_write_exittext"
-                />
+    <!--        </LinearLayout>-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginBottom="20dp"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:text="自我描述"-->
 
-        </LinearLayout>
+    <!--                android:textSize="15sp"-->
+    <!--                />-->
+    <!--            <EditText-->
+    <!--                android:layout_marginLeft="20dp"-->
+    <!--                android:layout_marginRight="40dp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="80dp"-->
+    <!--                android:background="@drawable/bg_job_write_exittext"-->
+    <!--                />-->
 
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:text="立即创建"
-            android:textColor="@color/white"
-            android:background="@drawable/button_job"/>
-    </LinearLayout>
+    <!--        </LinearLayout>-->
 
 
-</ScrollView>
+    <!--        <Button-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="50dp"-->
+    <!--            android:layout_marginRight="50dp"-->
+    <!--            android:text="立即创建"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:background="@drawable/button_job"/>-->
+    <!--    </LinearLayout>-->
+
+
+    <!--</ScrollView>-->

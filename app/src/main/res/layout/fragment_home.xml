@@ -9,6 +9,7 @@
     tools:context=".activity.ui.home.HomeFragment">
 
     <LinearLayout
+        android:id="@+id/fragment_help"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -72,6 +73,7 @@
             android:text="公司信息总览" />
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/train_people"
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

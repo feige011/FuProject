@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FuProject</string>
+    <string name="app_name">宙翔</string>
     <!--新版登录专用-->
     <string name="login">登录</string>
     <string name="login_input_username_hint">用户名</string>
@@ -64,7 +64,7 @@
     <string name="train_class_people_number">703332</string>
     <string name="department">部门: </string>
 
-<!--图片-->
+    <!--图片-->
     <string name="image">图片</string>
     <string name="all_image">所有图片</string>
     <string name="preview">预览</string>

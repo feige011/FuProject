@@ -173,6 +173,8 @@ data class AllEmploymentOfCompanyData(val total: Int,val list: List<AllEmploymen
 data class AllEmploymentOfCompany(val employmentId:Int,val userId:Int,val  name:String,val avata:String,val companyId:Int,val companyName:String,val departmentName:String,val  jobName:String,val hireDate:String,val  positiveDate:String,val  contractStartDate:String,val  contractEndDate:String,val hireForm:String)
 
 
+//名字+职位
+data class BaseThings(val name:String ,val employee:String)
 
 
 //@Path("current") current: Int,
