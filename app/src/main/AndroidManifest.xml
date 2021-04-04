@@ -15,21 +15,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.ui.notifications.GiveMoneyActivity"
+        <activity android:name=".activity.ui.home.train.TrainRadioActivity"
             android:theme="@style/NoTtTile"></activity>
+        <activity
+            android:name=".activity.ui.notifications.GiveMoneyActivity"
+            android:theme="@style/NoTtTile" />
         <activity
             android:name=".activity.ui.notifications.AboutActivity"
             android:theme="@style/NoTtTile" />
-        <activity android:name=".activity.ui.dashboard.search.SearchPeopleBasicActivity"
-            android:theme="@style/NoTtTile"/>
+        <activity
+            android:name=".activity.ui.dashboard.search.SearchPeopleBasicActivity"
+            android:theme="@style/NoTtTile" />
         <activity
             android:name=".activity.ui.home.help.FeedbackActivity"
             android:theme="@style/NoTtTile" />
         <activity
             android:name=".activity.ui.home.help.HelpActivity"
             android:theme="@style/NoTtTile" />
-        <activity android:name=".activity.ui.home.train.TrainPeopleActivity"
-            android:theme="@style/NoTtTile"/>
+        <activity
+            android:name=".activity.ui.home.train.TrainPeopleActivity"
+            android:theme="@style/NoTtTile" />
         <activity
             android:name=".activity.ui.home.train.TrainActivity"
             android:theme="@style/NoTtTile" />

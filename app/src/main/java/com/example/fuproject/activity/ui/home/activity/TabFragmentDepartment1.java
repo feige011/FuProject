@@ -1,6 +1,7 @@
 package com.example.fuproject.activity.ui.home.activity;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ import com.example.fuproject.R;
 import com.example.fuproject.activity.information.data.PieChartData;
 import com.example.fuproject.activity.information.view.PieChart;
 import com.example.fuproject.activity.ui.home.HomeFragment;
+import com.example.fuproject.activity.ui.home.train.TrainRadioActivity;
 import com.example.fuproject.model.PageUserSInfoResponseList;
 
 import java.util.ArrayList;
@@ -79,6 +81,8 @@ public class TabFragmentDepartment1 extends Fragment {
 //                }
 //            }
 //        }
+
+
         if (departmentName.equals("")) {
             TextView mDepartment = root.findViewById(R.id.people_resume_department);
             mDepartment.setText(departmentName);

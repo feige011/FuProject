@@ -308,6 +308,17 @@
                 android:textColor="@color/black"
                 android:text="@string/idNumber" />
         </LinearLayout>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/data_start_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="培训考核视频"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            />
+
 
         <LinearLayout
             android:layout_marginTop="10dp"
