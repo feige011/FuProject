@@ -148,7 +148,7 @@ class TrainPeopleActivity : AppCompatActivity() {
                 PeoplePastWorkEvaluateBean(
                     2020,
                     2021,
-                    "主管1",
+                    "培训主管"+(i+1),
                     AllName.speakNice[x]
                 )
             )
@@ -163,6 +163,7 @@ class TrainPeopleActivity : AppCompatActivity() {
             intent.getIntExtra("userId", -1)
         departmentName =
             intent.getStringExtra("departmentName").toString()
+        departmentName="实习生"
         recyclerView =
             findViewById<View>(R.id.train_people_work_experience_recyclerview) as RecyclerView
     }
@@ -326,11 +327,11 @@ class TrainPeopleActivity : AppCompatActivity() {
             ResumeAge.text = "18"
             val id = itemView.findViewById<TextView>(R.id.people_resume_id)
             id.setText(Companion.userId.toString())
-            if (Companion.departmentName != null) {
+//            if (Companion.departmentName != null) {
                 val department =
                     itemView.findViewById<TextView>(R.id.people_resume_department)
-                department.setText(Companion.departmentName)
-            }
+            department.text = Companion.departmentName
+//            }
             val rDegree = itemView.findViewById<TextView>(R.id.people_resume_degree)
             rDegree.setText(Companion.degree)
             val phone = itemView.findViewById<TextView>(R.id.people_resume_phone)
@@ -345,8 +346,8 @@ class TrainPeopleActivity : AppCompatActivity() {
 
     companion object {
         var userId: Int? = null
-        var departmentName = "人事部"
-        var name = "feige011"
+        var departmentName = "实习生"
+            var name = "宇智阳"
         var degree = "本科"
         var phoneNumber = "13478903196"
         var email = "1459419986@qq.com"

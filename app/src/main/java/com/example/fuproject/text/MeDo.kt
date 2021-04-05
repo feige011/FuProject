@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Handler
 import android.os.Message
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
@@ -73,6 +74,8 @@ class MeDo(val owner: ViewModelStoreOwner, val life: LifecycleOwner) : AppCompat
                         Log.e("feifei??aaa", e.message.toString())
                     }
 
+                }else{
+                    activity.chooseFalse()
                 }
                 Log.e("feifeiright", things.code.toString())
                 Log.e("feifeiright`", things.data.toString())

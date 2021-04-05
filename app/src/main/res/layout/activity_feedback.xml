@@ -86,7 +86,7 @@
                             android:background="@drawable/radiobutton_background"
                             android:button="@null"
                             android:gravity="center"
-                            android:text="性能问题"
+                            android:text="人员问题"
                             android:textColor="@color/radiobutton_textcolor"
                             android:textSize="14sp" />
 

@@ -17,6 +17,7 @@ object Repository {
 //                    Log.e("feifei","${Things.code}")
                 Result.success(Things)
             } else {
+
                 Log.e("feifei", thingsResponse.data.toString())
                 Log.e("feifei", thingsResponse.code.toString())
                 Log.e("feifei", thingsResponse.success.toString())
@@ -62,15 +63,15 @@ object Repository {
     fun enterLogin(login: Login) = liveData(Dispatchers.IO) {
         val result: Result<LoginResponse> = try {
             val thingsResponse = ThingsNetwork.enterLogin(login)
-            if (thingsResponse.success) {
+//            if (thingsResponse.success) {
 //                    Log.e("feifei","????????????????????")
                 val Things = thingsResponse
 //                    Log.e("feifei","${Things.code}")
                 Result.success(Things)
-            } else {
+//            } else {
 //                    Log.e("feifei","????????????????????2")
-                Result.failure(RuntimeException("response status is ${thingsResponse.code}"))
-            }
+//                Result.failure(RuntimeException("response status is ${thingsResponse.code}"))
+//            }
         } catch (e: Exception) {
             Log.e("feifeicuole", e.message.toString())
 //            Log.e("feifei","????????????????????")

@@ -53,7 +53,7 @@ public class TabFragmentDepartment1 extends Fragment {
 
     Integer userId;
     String departmentName = "人事部";
-    String name = "feige011";
+    String name = "李四";
     String degree = "本科";
     String phoneNumber = "13478903196";
     String email = "1459419986@qq.com";

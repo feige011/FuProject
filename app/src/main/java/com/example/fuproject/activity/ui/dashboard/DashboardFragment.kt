@@ -77,17 +77,26 @@ class DashboardFragment : Fragment() {
 
     private fun initClickSpinner(view: View) {
 //        view.train_spinner_place.onItemSelectedListener=
+        var trainClassBeanListTemporary= ArrayList<TrainClassBean>();
+        trainClassBeanListTemporary= (trainClassBeanList as ArrayList<TrainClassBean>).clone() as ArrayList<TrainClassBean>
+//        var position1=0;
+//        var position2=0;
+//        var position3=0;
         view.train_spinner_place.setOnItemSelectedListener(object :
             AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, v: View, position: Int, id: Long) {
+
                 val meList = ArrayList<TrainClassBean>()
-                for (i in trainClassBeanList) {
+                for (i in trainClassBeanListTemporary) {
                     if (i.place.equals(place[position])) {
                         meList.add(i);
                     }
                 }
                 if (position != 0) {
+                    trainClassBeanListTemporary= meList
                     initRecyclerView(view, meList)
+                }else{
+                    trainClassBeanListTemporary= (trainClassBeanList as ArrayList<TrainClassBean>).clone() as ArrayList<TrainClassBean>
                 }
 
             }
@@ -98,7 +107,7 @@ class DashboardFragment : Fragment() {
             AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, v: View, position: Int, id: Long) {
                 val meList = ArrayList<TrainClassBean>()
-                for (i in trainClassBeanList) {
+                for (i in  trainClassBeanListTemporary) {
                     if (position != 8) {
                         if (i.doThings.equals(category[position])) {
                             meList.add(i);
@@ -109,7 +118,10 @@ class DashboardFragment : Fragment() {
 
                 }
                 if (position != 0) {
+                    trainClassBeanListTemporary= meList
                     initRecyclerView(view, meList)
+                }else{
+                    trainClassBeanListTemporary= (trainClassBeanList as ArrayList<TrainClassBean>).clone() as ArrayList<TrainClassBean>
                 }
             }
 
@@ -137,7 +149,7 @@ class DashboardFragment : Fragment() {
             }
 
             private fun sortMoney() {
-                Collections.sort(trainClassBeanList
+                Collections.sort(trainClassBeanListTemporary
                     , kotlin.Comparator { o1, o2 ->
 
                             val xo1 = o1.money.split('-')
@@ -146,11 +158,11 @@ class DashboardFragment : Fragment() {
                             val x2 = (Integer.parseInt(xo2[0]) + Integer.parseInt(xo2[1])) / 2;
                             x2-x1
                     })
-                initRecyclerView(view, trainClassBeanList as ArrayList<TrainClassBean>)
+                initRecyclerView(view, trainClassBeanListTemporary as ArrayList<TrainClassBean>)
             }
 
             private fun sortDoTime() {
-                Collections.sort(trainClassBeanList
+                Collections.sort(trainClassBeanListTemporary
                     , kotlin.Comparator { o1, o2 ->
                         Integer.parseInt(o2.doTime[0].toString()) - Integer.parseInt(o1.doTime[0].toString())
                     })
@@ -158,19 +170,19 @@ class DashboardFragment : Fragment() {
             }
 
             private fun sortTime() {
-                Collections.sort(trainClassBeanList
+                Collections.sort(trainClassBeanListTemporary
                     , kotlin.Comparator { o1, o2 ->
                         Integer.parseInt(o1.releaseTime[0].toString()) - Integer.parseInt(o2.releaseTime[0].toString())
                     })
-                initRecyclerView(view, trainClassBeanList as ArrayList<TrainClassBean>)
+                initRecyclerView(view,trainClassBeanListTemporary as ArrayList<TrainClassBean>)
             }
 
             private fun sortStar() {
-                Collections.sort(trainClassBeanList
+                Collections.sort(trainClassBeanListTemporary
                     , kotlin.Comparator { o1, o2 ->
                         Integer.parseInt(o2.recommendedStar) - Integer.parseInt(o1.recommendedStar)
                     })
-                initRecyclerView(view, trainClassBeanList as ArrayList<TrainClassBean>)
+                initRecyclerView(view,trainClassBeanListTemporary as ArrayList<TrainClassBean>)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}

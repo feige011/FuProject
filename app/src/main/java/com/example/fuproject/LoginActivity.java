@@ -433,6 +433,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //            return false;
 //        }
 //    });
+    public void chooseFalse(){
+        Toast.makeText(this,"账号或密码错误",Toast.LENGTH_SHORT).show();
+    }
+
     public  void intentCompany(){
         Log.e("feifei","??????????????");
         SharedPreferences prefs=getPreferences(Context.MODE_PRIVATE);

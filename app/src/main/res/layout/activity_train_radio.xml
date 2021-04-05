@@ -30,52 +30,12 @@
             android:textSize="20sp" />
 
     </androidx.appcompat.widget.Toolbar>
-    <RelativeLayout
-        android:layout_margin="10dp"
-        android:layout_marginTop="20dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#DADADA"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:id="@+id/train_radio_recyclerView"/>
 
-        <VideoView
-            android:id="@+id/train_radio_dothings"
-            android:layout_width="match_parent"
-            android:layout_height="350dp"
-            />
-        <VideoView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/train_radio_people"
-            />
-    </RelativeLayout>
-    <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/train_radio_play"
-            android:layout_margin="10dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="播放视频"
-            tools:ignore="Suspicious0dp" />
-        <Button
-            android:id="@+id/train_radio_stop"
-            android:layout_margin="10dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="暂停视频"
-            tools:ignore="Suspicious0dp" />
-        <Button
-            android:id="@+id/train_radio_reboot"
-            android:layout_margin="10dp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:text="重新播放"
-            tools:ignore="Suspicious0dp" />
-    </LinearLayout>
 
 </LinearLayout>

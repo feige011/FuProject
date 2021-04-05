@@ -53,9 +53,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
-                        android:text="高大上有限公司"
+                        android:text="雷沃重工股份有限公司"
                         android:textColor="@color/black"
-                        android:textSize="20dp" />
+                        android:textSize="18dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -80,7 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
                         android:layout_marginLeft="12dp"
-                        android:text="2020-8-17"
+                        android:text="2021-4-4"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
                 </LinearLayout>

@@ -176,6 +176,8 @@ data class AllEmploymentOfCompany(val employmentId:Int,val userId:Int,val  name:
 //名字+职位
 data class BaseThings(val name:String ,val employee:String)
 
+//内容+视频地址
+data class RadioThings(val things: String,val url:String)
 
 //@Path("current") current: Int,
 //@Path("limit") limit: Int,
